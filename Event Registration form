@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration form</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBu0bY8NBaYXdkLHCzAlFgIjQMDuCnwRq6JH-dqn5EKrQkg9PVxG_aaBs&s=10"
+        width="600px"
+        alt="event registration form image"
+      />
+      <center>
+        <h1>EVENT REGISTRATION FORM</h1>
+      </center>
+    </header>
+    <strong>
+      You all are invited to register for the upcoming event on your campus
+    </strong>
+    <br />
+    <br />
+    <details>
+      <summary>Registration Details</summary>
+      <p>
+        Please fill out the form below to register for the event. <br />
+        Don't wait for last minute, register now to secure your spot!
+      </p>
+    </details>
+    <br />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/87hLeoeN0Ho?si=iNMQFOC3qoNJQl5r"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <br />
+    <table border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tech Symposium</td>
+          <td>15th September 2024</td>
+          <td>Auditorium A</td>
+          <td>10:00 AM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Coding Workshop</td>
+          <td>20th September 2024</td>
+          <td>Lab 3</td>
+          <td>2:00 PM - 5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Guest Lecture on AI</td>
+          <td>25th September 2024</td>
+          <td>Auditorium B</td>
+          <td>11:00 AM - 12:30 PM</td>
+        </tr>
+      </tbody>
+    </table>
+    >
+
+    <br />
+    <br />
+    <h1>Registration Form</h1>
+    <form action="submit_registration.php" method="get">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+      <br />
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="">-- Choose an event --</option>
+        <option value="tech-symposium">Tech Symposium</option>
+        <option value="coding-workshop">Coding Workshop</option>
+        <option value="ai-lecture">Guest Lecture on AI</option>
+      </select>
+      <br />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
